@@ -1,0 +1,38 @@
+# pegando o numero
+a = int(input('Digite um numero \033[1minteiro:\033[m\n'))
+# fim...
+#  ──────────────────────────────────────────────────────────── #
+# separando para a escolha (1-b,2-c,3-d)
+b = 'Binario'
+1==b
+c = 'Octal'
+2==c
+d = 'Hexadecimal'
+3==d
+#fim...
+#  ──────────────────────────────────────────────────────────── #
+# escolhas
+print('escolha uma base de conversão:\n1 \033[34m{}\033[m\n2 \033[31m{}\033[m\n3 \033[35m{}\033[m\n'.format(b,c,d))
+e = int(input('sua opção foi:'))
+#fim...
+#  ──────────────────────────────────────────────────────────── #
+# Contas
+if e==1:
+    h=format(a,'b')
+if e==2:
+    h=format(a,'o')
+if e==3:
+    h=format(a,'x')
+# fim...
+#  ──────────────────────────────────────────────────────────── #
+# 'resultados'
+if e==1:
+    t='\033[34mBinario\033[m'
+if e==2:
+    t='\033[31mOctal\033[m'
+if e==3:
+    t='\033[35mHexadecimal\033[m'
+print('Decimal para {}, fica {}'.format(t,h))
+#fim...
+#  ──────────────────────────────────────────────────────────── #
+
